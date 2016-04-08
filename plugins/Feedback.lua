@@ -18,7 +18,7 @@ do
 
   description = "Feedback",
 
-  usage = "feedback: Send A Message To Admins.",
+  usage = "dev: Send A Message To Admins.",
   patterns = {
   "^dev (.*)$"
 

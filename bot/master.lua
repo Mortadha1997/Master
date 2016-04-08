@@ -232,32 +232,21 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {53300935,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
+    about_text = [[MASTER v1.0
 An advanced administration bot based on TG-CLI written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/Mortadha1997/Master
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
+@Mortadha1997 [Developer]
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@Master_CH [Arabic]
 
 Our website 
-http://teleseed.seedteam.org/
+http://mortadha1997.github.io/Master
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -472,145 +461,144 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+MASTER|NEW source by @Mortadha1997
 
-!info
-Displays general info about the SuperGroup
+✅Commands list:
 
-!admins
+/admins
 Returns SuperGroup admins list
 
-!owner
-Returns group owner
+/mang
+Returns group manager
 
-!modlist
+/mods
 Returns Moderators list
 
-!bots
+/bots
 Lists bots in SuperGroup
 
 !who
 Lists all users in SuperGroup
 
-!block
+/block
 Kicks a user from SuperGroup
 *Adds user to blocked list*
 
-!ban
+/ban
 Bans user from the SuperGroup
 
-!unban
+/uban
 Unbans user from the SuperGroup
 
-!id
+/id
 Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
+*For userID's: /id @username or reply /id*
 
-!id from
+/id from
 Get ID of user message is forwarded from
 
-!kickme
+/kkme
 Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+*Must be unblocked by manager or use join by pm to return*
 
-!setowner
-Sets the SuperGroup owner
+/setmang
+Sets the SuperGroup manager
 
-!promote [username|id]
+/prom [username|id]
 Promote a SuperGroup moderator
 
-!demote [username|id]
+/dem [username|id]
 Demote a SuperGroup moderator
 
-!setname
+/setname
 Sets the chat name
 
 !setphoto
 Sets the chat photo
 
-!setrules
+/setrules
 Sets the chat rules
 
-!setabout
+/setabout
 Sets the about section in chat info(members list)
 
-!save [value] <text>
+/save [value] <text>
 Sets extra info for chat
 
-!get [value]
+/get [value]
 Retrieves extra info for chat by value
 
-!newlink
+/rlink
 Generates a new group link
 
-!link
+/link
 Retireives the group link
 
-!rules
+/rules
 Retrieves the chat rules
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+/[links|flood|spam|Arabic|member|rtl|sticker|contacts|strict] off
 Lock group settings
 *rtl: Delete msg if Right To Left Char. is in name*
 *strict: enable strict settings enforcement (violating user will be kicked)*
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+/[links|flood|spam|Arabic|member|rtl|sticker|contacts|strict] on
 Unlock group settings
 *rtl: Delete msg if Right To Left Char. is in name*
 *strict: disable strict settings enforcement (violating user will not be kicked)*
 
-!mute [all|audio|gifs|photo|video|service]
+/[all|audio|gifs|photo|video|service] on
 mute group message types
 *A "muted" message type is auto-deleted if posted
 
-!unmute [all|audio|gifs|photo|video|service]
+/[all|audio|gifs|photo|video|service] off
 Unmute group message types
 *A "unmuted" message type is not auto-deleted if posted
 
-!setflood [value]
+/setflood [value]
 Set [value] as flood sensitivity
 
-!settings
+/settings
 Returns chat settings
 
-!muteslist
+/setting
 Returns mutes for chat
 
-!muteuser [username]
+/mute [username]
 Mute a user in chat
 *If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+*only manager can mute | mods and manager can unmute
 
-!mutelist
+/mutes
 Returns list of muted users in chat
 
-!banlist
+/bans
 Returns SuperGroup ban list
 
-!clean [rules|about|modlist|mutelist]
+/del [rules|about|mods|mutes]
 
-!del
+!del [only "!" ]
 Deletes a message by reply
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+/public [yes|no]
+Set chat visibility in pm /chats or /chatlist commands
 
-!res [username]
+/res [username]
 Returns users name and id by username
 
 
-!log
+/log
 Returns group logs
 *Search for kick reasons using [#RTL|#spam|#lockmember]
 
 **You can use "#", "!", or "/" to begin all commands
 
-*Only owner can add members to SuperGroup
+*Only manager can add members to SuperGroup
 (use invite link to invite)
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+*Only moderators and manager can use block, ban, uban, rlink, link, setphoto, setname, on, off, setrules, setabout and settings commands
 
-*Only owner can use res, setowner, promote, demote, and log commands
+*Only manager can use res, setmang, prom, dem, and log commands
 
 ]],
   }

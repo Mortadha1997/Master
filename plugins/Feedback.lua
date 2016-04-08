@@ -7,10 +7,10 @@ do
 
 
    local text = matches[1]
-   local chat = "channel#id"..1030043851 --تضع هنا ايدي مجموعت الدعم الخاصه بك
+   local chat = "channel#id"..1030043851 --تضع هنا ايدي مجموعة الدعم الخاصه بك
 
   local sends = send_msg(chat, fuse, ok_cb, false)
-  return 'تم ارسال رسالتك الى مجموعة الدعم 🙂💕'
+  return 'تم ارسال رسالتك الى مجموعة الدعم ☹️👍'
 
  end
  end
@@ -20,9 +20,9 @@ do
 
   usage = "feedback: Send A Message To Admins.",
   patterns = {
-  "^feed (.*)$"
+  "^dev (.*)$"
 
   },
   run = run
  }
---By Ww_Shahabsaf_wW
+--By Mortadha1997

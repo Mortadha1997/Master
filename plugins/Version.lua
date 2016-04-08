@@ -1,23 +1,21 @@
 do
 
 function run(msg, matches)
-return [[TeleNeW v8
+return [[TeleNeW v1
 An advanced administration bot based on TG-CLI written in Lua
 
 
 
 #Developers
-@wawi8 [ Dev ]
-@hunter18k  [ Dev ]
-@zainahmed98  [ Dev ]
+@Mortadha1997 [ DEV ]
 
 Our channels
-@iq_dev8 [ Arabic ]
+@Master_CH [ Arabic ]
 
 
-http://telegram.me/iq_dev8
+http://telegram.me/Master_CH
 
-The github <>\ git clone https://github.com/wawi8/TeleNew.git -b supergroups
+The github <>\ git clone https://github.com/Mortadha1997/Master.git -b supergroups
 ]]
 end
 
@@ -25,7 +23,7 @@ return {
 description = "Shows bot q", 
 usage = "spam Shows bot q",
 patterns = {
-"telenew$"
+"master$"
 },
 run = run 
 }

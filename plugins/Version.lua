@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-return [[TeleNeW v1
+return [[Master v1
 An advanced administration bot based on TG-CLI written in Lua
 
 
@@ -20,8 +20,8 @@ The github <>\ git clone https://github.com/Mortadha1997/Master.git -b supergrou
 end
 
 return {
-description = "Shows bot q", 
-usage = "spam Shows bot q",
+description = "Shows bot version", 
+usage = "spam Shows bot version",
 patterns = {
 "master$"
 },

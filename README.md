@@ -13,6 +13,13 @@ cd Master
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
+
+# open new terminal:
+git clone git://git.savannah.gnu.org/screen.git
+killall screen
+killall telegram-cli
+cd Master
+screen bash steady.sh -s
 ```
 
 

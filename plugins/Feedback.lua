@@ -1,28 +1,36 @@
-do
-
- function run(msg, matches)
- local ch = 'chat#id'..msg.to.id
- local fuse = 'Group Name : '..msg.to.title..'\n\nUser ID: ' .. msg.from.id .. '\nName: ' .. msg.from.print_name ..'\nUsername: @' .. msg.from.username ..'\n\nFrom Super Group ID: '..msg.to.id.. '\n\nMsg:\n' .. matches[1]
- local fuses = '!printf user#id' .. msg.from.id
-
-
-   local text = matches[1]
-   local chat = "channel#id"..1030043851 --تضع هنا ايدي مجموعة الدعم الخاصه بك
-
-  local sends = send_msg(chat, fuse, ok_cb, false)
-  return 'تم ارسال رسالتك الى مجموعة الدعم ☹️👍'
-
+--[[do
+  
+  local function run(msg, matches)
+      if matches[1] then
+          local fuse = '#Feedback\n\nId : #' .. msg.from.id .. '\n\nName: ' ..string.gsub(msg.from.print_name, "_", " ") ..'\n\nUsername: @' .. msg.from.username .. '\n\nFeedback: \n\n     ' .. matches[1] 
+     	local chat = "chat#id"..84180057 --like : local chat = "chat#id"..12345678
+   	 local sends = send_large_msg(chat, fuse, ok_cb, false)
+   	 return 'Sent!'
+      end
+  end
+   return {
+    description = "Feedback",
+    usage = "!feedback message",
+    patterns = {
+    "^[!/][Ff]eedback (.*)$"
+    },
+    run = run
+  }
+  end]]
+ 
+ do
+local function run(msg, matches)
+    print_name = string.gsub(msg.from.print_name, "_", " ")
+    local fuse = 'تم تلقي رسالة جديدة #Feedback\n\nالايدي #: ' .. msg.from.id .. '\n\nالاسم : '..print_name ..'\n\nالمعرف : @' .. msg.from.username .. '\n\nالرسالة :\n     ' .. matches[1] 
+ local chat = "chat#id"..64979309
+ local sends = send_large_msg(chat, fuse, ok_cb, false)
+        return 'Sent!\nتـــم ارســــــال رســــالتك بــنــجاح..'
  end
- end
+ 
  return {
-
-  description = "Feedback",
-
-  usage = "dev: Send A Message To Admins.",
-  patterns = {
-  "^/dev (.*)$"
-
-  },
-  run = run
+ patterns = {
+ "^[!/][Dd]ev (.*)$"
+ },
+ run = run
  }
---By Mortadha1997
+ end

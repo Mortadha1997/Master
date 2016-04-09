@@ -36,8 +36,8 @@ end
 
 return {
     patterns = {
-        '^(fwd off)$',
-        '^(fwd on)$'
+        '^/(fwd off)$',
+        '^/(fwd on)$'
     },
     run = run,
     pre_process = pre_process

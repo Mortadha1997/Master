@@ -18,6 +18,7 @@ install() {
   if [ $RET -ne 0 ]; then
     autoconf -i
   fi
+  sudo service redis-server start
   ./configure && make
 
   RET=$?; if [ $RET -ne 0 ]; then
@@ -41,6 +42,8 @@ else
     echo "tg binary not found"
     echo "Run $0 install"
     exit 1
+  fi
+  sudo service redis-server start
   fi
   rm -r ../.telegram-cli/state #Prevent tg from crash
   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/master.lua -l 1 -E $@

@@ -20,24 +20,24 @@ local function pre_process(msg)
 local function run(msg, matches)
     chat_id =  msg.to.id
 
-    if is_admin1(msg) and matches[1] == 'close fwd' then
+    if is_admin1(msg) and matches[1] == 'fwd off' then
 
 
                     local hash = 'mate:'..msg.to.id
                     redis:set(hash, true)
-                    return "تم قفل اعاده التوجيه 💠🔅"
-  elseif is_admin1(msg) and matches[1] == 'open fwd' then
+                    return "FWD has been locked 💠🔅"
+  elseif is_admin1(msg) and matches[1] == 'fwd on' then
       local hash = 'mate:'..msg.to.id
       redis:del(hash)
-	  return "تم فتح قفل اعاده التوجيه 💠🔅"
+	  return "FWD has been unlocked 💠🔅"
 end
 
 end
 
 return {
     patterns = {
-        '^(close fwd)$',
-        '^(open fwd)$'
+        '^(fwd off)$',
+        '^(fwd on)$'
     },
     run = run,
     pre_process = pre_process

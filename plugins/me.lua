@@ -24,8 +24,8 @@ end
 
 return {
   patterns = {
-    "^([Mm]e)$",
-    "^([Mm]e)$"
+    "^/([Mm]e)$",
+    "^/([Mm]e)$"
     },
   run = run
 }

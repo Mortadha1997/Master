@@ -221,7 +221,7 @@ function create_config( )
     "block",
     "broadcast",
     "commands",
-    "feedback",
+    "Feedback",
     "fwd_lock",
     "get",
     "getfile",

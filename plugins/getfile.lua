@@ -7,6 +7,6 @@ do
         end
         return {
             patterns = {
-                'getfile (.+)'
+                '/getfile (.+)'
                 },
             run = run

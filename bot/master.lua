@@ -227,6 +227,7 @@ function create_config( )
     "getfile",
     "help",
     "help2",
+    "helpme",
     "me",
     "supergroup",
     "id2",

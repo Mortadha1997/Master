@@ -16,6 +16,7 @@ chmod +x launch.sh
 
 # open new terminal:
 git clone git://git.savannah.gnu.org/screen.git
+sudo apt-get install screen
 killall screen
 killall telegram-cli
 cd Master

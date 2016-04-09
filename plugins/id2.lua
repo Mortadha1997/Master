@@ -8,7 +8,7 @@ do
     end
     local text = 'User ID  : '..result.from.peer_id..'\n'
                ..'Username : '..user_name..'\n'
-               ..'CHANEEL BOT: @IQ_DEV9'
+               ..'CHANEEL BOT: @Master_CH'
     send_large_msg(extra, text)
   end
 
@@ -26,7 +26,7 @@ do
     decription = 'Print user_id by_reply',
     usage = 'Reply to a message then type: !id',
     patterns = {
-      "^(in)$"
+      "^/(in)$"
     },
     run = run
   }

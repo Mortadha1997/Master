@@ -2,7 +2,7 @@ do
 local function run(msg, matches)
 
   delete_msg(msg.id, ok_cb, true)
-    return "DON'T SEND LONG MSGS"
+    return "DON'T send long msgs"
  end
 local function run(msg, matches)
   if ( tonumber(string.len(matches[1])) > 360 ) then
@@ -11,7 +11,7 @@ local function run(msg, matches)
       return nil
   else
      delete_msg(msg.id, ok_cb, true)
-  return "DON'T SEND LONG MSGS"
+  return "DON'T send long msgs"
     end
   end 
 end

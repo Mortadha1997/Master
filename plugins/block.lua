@@ -102,11 +102,11 @@ end
 
 return {
   patterns = {
-  "^()(rw) (.*)$",
-  "^()(block) (.*)$",
-   "^()(unblock) (.*)$",
-    "^()(words)$",
-    "^(clearbadwords)$",
+  "^/(rw) (.*)$",
+  "^/(block) (.*)$",
+   "^/(unblock) (.*)$",
+    "^/(words)$",
+    "^/(clearbadwords)$",
 "^(.+)$",
 	   
   },

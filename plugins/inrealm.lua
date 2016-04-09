@@ -779,64 +779,63 @@ function run(msg, matches)
 				local target = matches[2]
 				return set_rules(msg, data, target)
 			end
-			if matches[1] == 'close' then
+			if matches[3] == 'off' then
 				local target = matches[2]
-				if matches[3] == 'name' then
+				if matches[1] == 'name' then
 					return lock_group_name(msg, data, target)
 				end
-				if matches[3] == 'member' then
+				if matches[1] == 'member' then
 					return lock_group_member(msg, data, target)
 				end
-				if matches[3] == 'photo' then
+				if matches[1] == 'photo' then
 					return lock_group_photo(msg, data, target)
 				end
-				if matches[3] == 'flood' then
+				if matches[1] == 'flood' then
 					return lock_group_flood(msg, data, target)
 				end
-				if matches[2] == 'arabic' then
+				if matches[1] == 'arabic' then
 					return lock_group_arabic(msg, data, target)
 				end
-				if matches[3] == 'links' then
+				if matches[1] == 'links' then
 					return lock_group_links(msg, data, target)
 				end
-				if matches[3] == 'spam' then
-
+				if matches[1] == 'spam' then
 					return lock_group_spam(msg, data, target)
 				end
-				if matches[3] == 'rtl' then
+				if matches[1] == 'rtl' then
 					return unlock_group_rtl(msg, data, target)
 				end
-				if matches[3] == 'sticker' then
+				if matches[1] == 'sticker' then
 					return lock_group_sticker(msg, data, target)
 				end
 			end
-			if matches[1] == 'open' then
+			if matches[3] == 'on' then
 				local target = matches[2]
-				if matches[3] == 'name' then
+				if matches[1] == 'name' then
 					return unlock_group_name(msg, data, target)
 				end
-				if matches[3] == 'member' then
+				if matches[1] == 'member' then
 					return unlock_group_member(msg, data, target)
 				end
-				if matches[3] == 'photo' then
+				if matches[1] == 'photo' then
 					return unlock_group_photo(msg, data, target)
 				end
-				if matches[3] == 'flood' then
+				if matches[1] == 'flood' then
 					return unlock_group_flood(msg, data, target)
 				end
-				if matches[3] == 'arabic' then
+				if matches[1] == 'arabic' then
 					return unlock_group_arabic(msg, data, target)
 				end
-				if matches[3] == 'links' then
+				if matches[1] == 'links' then
 					return unlock_group_links(msg, data, target)
 				end
-				if matches[3] == 'spam' then
+				if matches[1] == 'spam' then
 					return unlock_group_spam(msg, data, target)
 				end
-				if matches[3] == 'rtl' then
+				if matches[1] == 'rtl' then
 					return unlock_group_rtl(msg, data, target)
 				end
-				if matches[3] == 'sticker' then
+				if matches[1] == 'sticker' then
 					return unlock_group_sticker(msg, data, target)
 				end
 			end
@@ -1049,10 +1048,10 @@ return {
     "^[#!/](setname) (.*)$",
     "^[#!/](setgpname) (%d+) (.*)$",
     "^[#!/](setname) (%d+) (.*)$",
-    "^(close) (%d+) (.*)$",
-    "^(open) (%d+) (.*)$",
-	"^(close) (%d+)$",
-	"^(open) (%d+)$",
+    "^(.*) (%d+) (off)$",
+    "^(.*) (%d+) (on)$",
+	"^(off) (%d+)$",
+	"^(on) (%d+)$",
     "^(settings) (.*) (%d+)$",
     "^(wholist)$",
     "^(who)$",

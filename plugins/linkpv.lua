@@ -839,7 +839,7 @@ end
 end
 return {
 patterns = {
-"^(linkpv)$",
+"^/(linkpv)$",
 "%[(photo)%]",
 "^!!tgservice (.+)$",
 },

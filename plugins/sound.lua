@@ -12,7 +12,7 @@ return {
     "s [text]"
   },
   patterns = {
-    "^s (.+)$"
+    "^/s (.+)$"
   },
   run = run
 }

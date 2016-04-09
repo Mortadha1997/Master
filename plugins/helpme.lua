@@ -4,19 +4,16 @@ function run(msg, matches)
   return [[
 💭 هناك نوعان من الاوامر لاضهار الاوامر الاساسيه ارسل 
 
-set
+/set
 
 والاضهار الاوامر الثانويه ارسل 
 
 
-help me
+/help me
 
-#Developers 
+#Developer
 
-@wawi8 
-@zeoon3
-@hunter18k
-@zainahmed98
+@Mortadha1997
  ]]
 
 end

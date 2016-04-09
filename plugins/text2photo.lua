@@ -23,7 +23,7 @@ return {
     "ph [equation]: Convert LaTeX equation to image"
   },
   patterns = {
-    "^ph (.+)$"
+    "^/ph (.+)$"
   },
   run = run
 }

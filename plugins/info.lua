@@ -13,7 +13,7 @@ end
 
 return {
 patterns = {
-"^info"
+"^/info"
 },
 run = run
 }

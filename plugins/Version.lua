@@ -23,7 +23,7 @@ return {
 description = "Shows bot version", 
 usage = "spam Shows bot version",
 patterns = {
-"master$"
+"/master$"
 },
 run = run 
 }

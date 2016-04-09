@@ -19,19 +19,6 @@
 # It should be able to recover the telegram bot in any case telegram-cli crashes, freezes or whatever.
 # This script works by tracing ctxt swithes value in kernel procces at a $RELOADTIME 
 # So it can detect any kind of kernel interruption with the procces and reload the bot.
-#
-#--------------------------------------------------
-#--      ____  ____ _____                        --
-#--     |    \|  _ )_   _|___ ____   __  __      --
-#--     | |_  )  _ \ | |/ ·__|  _ \_|  \/  |     --
-#--     |____/|____/ |_|\____/\_____|_/\/\_|     --
-#--                                              --
-#--------------------------------------------------
-#--                                              --
-#--       Developers: @Josepdal & @MaSkAoS       --
-#--     Support: @Skneos,  @iicc1 & @serx666     --
-#--                                              --
-#--------------------------------------------------
 
 
 # Some script variables
@@ -42,7 +29,7 @@ NONVOLUNTARYCHECK=0
 VOLUNTARY=1
 VOLUNTARYCHECK=0
 I=1
-BOT=DBTeam  # You can put here other bots. Also you can change it to run more than one bot in the same server.
+BOT=Master  # You can put here other bots. Also you can change it to run more than one bot in the same server.
 RELOADTIME=10  # Time between checking cpu calls of the cli process. Set the value high if your bot does not receive lots of messages.
 
 
@@ -94,12 +81,7 @@ echo -e "$f2 $BOT FOUND IN YOUR HOME DIRECTORY$rst"
 sleep 0.5
 
 
-echo ""
-echo -e "\033[38;5;208m      ____  ____ _____                        \033[0;00m"
-echo -e "\033[38;5;208m     |    \|  _ )_   _|___ ____   __  __      \033[0;00m"
-echo -e "\033[38;5;208m     | |_  )  _ \ | |/ .__|  _ \_|  \/  |     \033[0;00m"
-echo -e "\033[38;5;208m     |____/|____/ |_|\____/\_____|_/\/\_|     \033[0;00m"
-echo -e "\033[38;5;208m                                              \033[0;00m"
+echo "Developer : @Mortadha1997"
 
 sleep 1.5
 echo -e "$bld$f4 CHECKING PROCESSES...$rst"
@@ -247,11 +229,6 @@ sleep 0.5
 
 
 echo ""
-echo -e "\033[38;5;208m      ____  ____ _____                        \033[0;00m"
-echo -e "\033[38;5;208m     |    \|  _ )_   _|___ ____   __  __      \033[0;00m"
-echo -e "\033[38;5;208m     | |_  )  _ \ | |/ .__|  _ \_|  \/  |     \033[0;00m"
-echo -e "\033[38;5;208m     |____/|____/ |_|\____/\_____|_/\/\_|     \033[0;00m"
-echo -e "\033[38;5;208m                                              \033[0;00m"
 
 # Starting preliminar setup
 sleep 1.5
@@ -527,11 +504,6 @@ while getopts ":tsTSih" opt; do
 	echo "steady.sh bash script v1.2 iicc 2016 DBTeam" >&2
 	echo ""
 	echo -e "\e[0m"
-echo -e "\033[38;5;208m      ____  ____ _____                        \033[0;00m"
-echo -e "\033[38;5;208m     |    \|  _ )_   _|___ ____   __  __      \033[0;00m"
-echo -e "\033[38;5;208m     | |_  )  _ \ | |/ .__|  _ \_|  \/  |     \033[0;00m"
-echo -e "\033[38;5;208m     |____/|____/ |_|\____/\_____|_/\/\_|     \033[0;00m"
-echo -e "\033[38;5;208m                                              \033[0;00m"	
 echo ""
 	exit 1
       ;;

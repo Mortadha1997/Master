@@ -20,9 +20,9 @@ function run(msg, matches)
   if not is_momod(msg) then
 	return
   end
-  if not is_admin1(msg) then -- For admins only !
-		return 'Only admins can invite.'
-  end
+  --if not is_admin1(msg) then -- For admins only !
+		--return 'Only admins can invite.'
+  --end
   if not is_realm(msg) then
     if data[tostring(msg.to.id)]['settings']['lock_member'] == 'yes' and not is_admin1(msg) then
 		  return 'Group is private.'
@@ -37,7 +37,7 @@ function run(msg, matches)
 end
 return {
     patterns = {
-      "^invite (.*)$"
+      "^inv (.*)$"
     },
     run = run
 }

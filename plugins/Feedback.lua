@@ -20,7 +20,7 @@ do
 
   usage = "dev: Send A Message To Admins.",
   patterns = {
-  "^dev (.*)$"
+  "^/dev (.*)$"
 
   },
   run = run

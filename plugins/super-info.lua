@@ -1,7 +1,3 @@
---[[
-CHANNEL BOT : @IQ_DEV8
-]]
-
 do
 local Arian = 159280034 --تضع ايدي بوتك هنا
 
@@ -199,7 +195,7 @@ local function run(msg, matches)
 	 text = text..'Group name : '..msg.to.title..'\n'
      text = text..'Group ID : '..msg.to.id
     end
-	text = text..'\n\n#CHANNEL BOT : @IQ_DEV8'
+	text = text..'\n\n#CHANNEL BOT : @Master_CH'
     return send_msg(receiver, text, ok_cb, true)
     end
   end

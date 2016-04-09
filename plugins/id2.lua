@@ -26,7 +26,7 @@ do
     decription = 'Print user_id by_reply',
     usage = 'Reply to a message then type: !id',
     patterns = {
-      "^/(in)$"
+      "^/in$"
     },
     run = run
   }

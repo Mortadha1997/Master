@@ -33,7 +33,7 @@ screen bash steady.sh -s
 killall screen
 killall telegram-cli
 cd Master
-screen bash steady.sh -s --RUN
+screen bash steady.sh -s # RUN
 ```
 
 

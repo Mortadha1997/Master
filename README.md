@@ -26,6 +26,17 @@ screen bash steady.sh -s
 
 * * *
 
+### Run the BOT :
+
+```sh
+# open new terminal
+killall screen
+killall telegram-cli
+cd Master
+screen bash steady.sh -s --RUN
+```
+
+
 ### Realm configuration
 
 After you run the bot for first time, send it `id`. Get your ID and stop the bot.

@@ -18,7 +18,6 @@ install() {
   if [ $RET -ne 0 ]; then
     autoconf -i
   fi
-  sudo service redis-server start
   ./configure && make
 
   RET=$?; if [ $RET -ne 0 ]; then
